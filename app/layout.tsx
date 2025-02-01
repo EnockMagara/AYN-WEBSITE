@@ -1,13 +1,12 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
-import type React from "react"
+import type React from "react" // Import React
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Ayn - A Device You Can Trust",
-  description:
-    "Ayn: Your trusted real-time assistant for safe and independent navigation, empowering visually impaired individuals.",
+  title: "VisionAssist - AI-Powered Visual Assistance",
+  description: "Experience the world in a new way with our real-time object detection and scene description app.",
 }
 
 export default function RootLayout({
@@ -17,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
